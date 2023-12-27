@@ -1,0 +1,6 @@
+Crear base de datos mysql
+docker run --name mymysql -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=mern-react -p 3306:3306 -d mysql
+
+conectarse a la base de datos
+docker exec -it mymysql bash
+mysql -u root --password
